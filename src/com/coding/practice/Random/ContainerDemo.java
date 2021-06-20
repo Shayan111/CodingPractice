@@ -17,14 +17,19 @@ public class ContainerDemo
         myAnotherContainer.addEntity(3);
         myAnotherContainer.addEntity(4);
 
-        for (int i = 0; i < myContainer.getContainerSize(); i++)
-        {
-            System.out.println(myContainer.getEntity(i));
-        }
+//        for (int i = 0; i < myContainer.getContainerSize(); i++)
+//        {
+//            System.out.println(myContainer.getEntity(i));
+//        }
 
         for (int i = 0; i < myAnotherContainer.getContainerSize() ; i++)
         {
             System.out.println(myAnotherContainer.getEntity(i));
+        }
+
+        for (String item : myContainer)
+        {
+            System.out.println(item);
         }
 
     }

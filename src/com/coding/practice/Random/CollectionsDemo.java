@@ -39,7 +39,7 @@ public class CollectionsDemo<T>
     }
 
     public static void main(String[] args) {
-        CollectionsDemo<String> c = new CollectionsDemo();
+        CollectionsDemo<String> c = new CollectionsDemo<String>();
         //c.doThis("io");
         List<String> ar = Arrays.asList("Shayan", "Ausaf","Saim");
         List<Integer> arr = Arrays.asList(1,5,3,7,9);

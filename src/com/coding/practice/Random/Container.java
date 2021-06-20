@@ -1,8 +1,9 @@
 package com.coding.practice.Random;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
-public class Container<T>
+public class Container<T> implements Iterable<T>
 {
     private ArrayList<T> ar;
 
@@ -23,5 +24,10 @@ public class Container<T>
     public int getContainerSize()
     {
         return this.ar.size();
+    }
+
+    @Override
+    public Iterator<T> iterator() {
+        return new ContainerIterator<>(this);
     }
 }
