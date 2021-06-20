@@ -1,13 +1,17 @@
 package com.coding.practice.Random;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
-public class CollectionsDemo
+public class CollectionsDemo<T>
 {
 
+    public void doThat(List<T> arraylist)
+    {
+        for (T entity : arraylist)
+        {
+            System.out.println(entity);
+        }
+    }
     public void doThis(String key)
     {
         Map<String, Integer> hashMap = new HashMap<>();
@@ -35,7 +39,10 @@ public class CollectionsDemo
     }
 
     public static void main(String[] args) {
-        CollectionsDemo c = new CollectionsDemo();
-        c.doThis("io");
+        CollectionsDemo<String> c = new CollectionsDemo();
+        //c.doThis("io");
+        List<String> ar = Arrays.asList("Shayan", "Ausaf","Saim");
+        List<Integer> arr = Arrays.asList(1,5,3,7,9);
+        c.doThat(ar);
     }
 }
