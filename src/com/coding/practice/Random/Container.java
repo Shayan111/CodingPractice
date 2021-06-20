@@ -28,6 +28,6 @@ public class Container<T> implements Iterable<T>
 
     @Override
     public Iterator<T> iterator() {
-        return new ContainerIterator<>(this);
+        return new ContainerIterator<T>(this);
     }
 }
