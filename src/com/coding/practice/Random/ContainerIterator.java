@@ -5,7 +5,7 @@ import java.util.List;
 
 public class ContainerIterator<T> implements Iterator<T>
 {
-    private final Container<T> container;
+    private Container<T> container;
     private int i = 0;
 
     public ContainerIterator(Container<T> container) {
@@ -14,12 +14,13 @@ public class ContainerIterator<T> implements Iterator<T>
 
     @Override
     public boolean hasNext() {
-        return i < this.container.getContainerSize();
+        return i < container.getContainerSize();
     }
 
     @Override
     public T next() {
+        T data = container.getEntity(i);
         i++;
-        return this.container.getEntity(i);
+        return data;
     }
 }

@@ -17,10 +17,10 @@ public class ContainerDemo
         myAnotherContainer.addEntity(3);
         myAnotherContainer.addEntity(4);
 
-//        for (int i = 0; i < myContainer.getContainerSize(); i++)
-//        {
-//            System.out.println(myContainer.getEntity(i));
-//        }
+        for (int i = 0; i < myContainer.getContainerSize(); i++)
+        {
+            System.out.println(myContainer.getEntity(i));
+        }
 
         for (int i = 0; i < myAnotherContainer.getContainerSize() ; i++)
         {
@@ -32,6 +32,10 @@ public class ContainerDemo
             System.out.println(item);
         }
 
+        for (Integer item : myAnotherContainer)
+        {
+            System.out.println(item);
+        }
     }
 
     public static void main(String[] args)

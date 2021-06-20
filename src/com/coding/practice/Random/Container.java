@@ -11,7 +11,7 @@ public class Container<T> implements Iterable<T>
         this.ar = new ArrayList<>();
     }
 
-        public void addEntity(T elem)
+    public void addEntity(T elem)
     {
         this.ar.add(elem);
     }
