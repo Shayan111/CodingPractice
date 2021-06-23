@@ -5,7 +5,7 @@ Collections class
 Abstraction
 Encapsulation
 Inheritance
-Polymorphism
+Polymorphism (Most important)
 Wrapper class
 CallByValue
 CallByReference
